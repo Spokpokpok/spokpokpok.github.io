@@ -4,11 +4,9 @@ var J = parseInt('10');
 var Q = parseInt('10');
 var K = parseInt('10');
 var A = parseInt('11');
-
 function getStatus(){
 	return 'diller: '+dealer.join(' ')+' igrok: '+player.join(' ')+'.';
 }
-
 function getRandomInt(min, max)
 {
 	return Math.floor(Math.random()*(max-min+1))+min;
@@ -20,8 +18,6 @@ function getCard()
 }
 function getSum(arr){
 	var sum = 0; 
-
-
 for (var i = 0; i < arr.length; i++) {
 	if (arr[i]<=10) sum+=+arr[i]
 		else if (arr[i] !='A') sum+=10;
@@ -33,24 +29,17 @@ for (var i = 0; i < arr.length; i++) {
 }
 	return sum;
 }
-
-
 var dealer = [getCard()];
 var player = [getCard(), getCard()];
-
 if (getSum(player)==21)
 	{
-		
 		prompt(' y vas blackjack NA RAZDA4E, POBEDA!');
-	
 	}
 		else{
-
 var answer='';
 do{
 	if (getSum(player)==21)
 	{
-		
 		prompt(getStatus()+' y vas blackjack, POBEDA!');
 		break;
 	}
@@ -65,7 +54,6 @@ do{
 		player.push(getCard());
 	}
 	else{
-	
 		while (getSum(dealer)< 17){
 			dealer.push(getCard());
 		};
@@ -84,16 +72,8 @@ do{
 		}else if(sumPlayer<sumDealer){
 			alert('proigrash '+getStatus());
 		}
-
 	}
-
 }
-	
 } while(answer=='1');
-
-
 }
-
-
-
 </script>
