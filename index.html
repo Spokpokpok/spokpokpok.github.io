@@ -1,1 +1,99 @@
-spokpokpok.io
+<meta charset="utf-8">
+<script>
+var J = parseInt('10');
+var Q = parseInt('10');
+var K = parseInt('10');
+var A = parseInt('11');
+
+function getStatus(){
+	return 'diller: '+dealer.join(' ')+' igrok: '+player.join(' ')+'.';
+}
+
+function getRandomInt(min, max)
+{
+	return Math.floor(Math.random()*(max-min+1))+min;
+}
+function getCard()
+{
+	var cards = ['6','7','8','9','10','J','Q','K','A'];
+	return cards[getRandomInt(0, cards.length-1)];
+}
+function getSum(arr){
+	var sum = 0; 
+
+
+for (var i = 0; i < arr.length; i++) {
+	if (arr[i]<=10) sum+=+arr[i]
+		else if (arr[i] !='A') sum+=10;
+}
+for (var i = 0; i < arr.length; i++) {
+	if ((arr[i]=='A') && (sum+11)>21)
+		sum+=1;
+	else if (arr[i] == 'A') sum += 11;		
+}
+	return sum;
+}
+
+
+var dealer = [getCard()];
+var player = [getCard(), getCard()];
+
+if (getSum(player)==21)
+	{
+		
+		prompt(' y vas blackjack NA RAZDA4E, POBEDA!');
+	
+	}
+		else{
+
+var answer='';
+do{
+	if (getSum(player)==21)
+	{
+		
+		prompt(getStatus()+' y vas blackjack, POBEDA!');
+		break;
+	}
+	else if (getSum(player)>21){
+		
+		prompt(getStatus()+' y vas perebor, PORAJENIE!');
+		break;
+	}
+	else {
+	answer = prompt(getStatus()+' hotite ewe karty? 1- da, else - net');
+	if (answer=='1'){
+		player.push(getCard());
+	}
+	else{
+	
+		while (getSum(dealer)< 17){
+			dealer.push(getCard());
+		};
+		var sumDealer =getSum(dealer);
+		var sumPlayer = getSum(player);
+
+		if(sumDealer==21){
+			alert('y dillera BJ '+getStatus());
+		} else if (sumDealer>21){
+			alert('i dillera perebor '+getStatus());
+		}else if (sumDealer==sumPlayer) {
+			alert('nich`ja '+getStatus());
+		} else if(sumPlayer>sumDealer){
+			alert('viigrash '+getStatus());
+
+		}else if(sumPlayer<sumDealer){
+			alert('proigrash '+getStatus());
+		}
+
+	}
+
+}
+	
+} while(answer=='1');
+
+
+}
+
+
+
+</script>
