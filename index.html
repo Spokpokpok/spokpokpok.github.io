@@ -5,7 +5,7 @@ var Q = parseInt('10');
 var K = parseInt('10');
 var A = parseInt('11');
 function getStatus(){
-	return 'diller: '+dealer.join(' ')+' igrok: '+player.join(' ')+'.';
+	return 'Диллер: '+dealer.join(' ')+' Игрок: '+player.join(' ')+'.';
 }
 function getRandomInt(min, max)
 {
@@ -33,23 +33,23 @@ var dealer = [getCard()];
 var player = [getCard(), getCard()];
 if (getSum(player)==21)
 	{
-		prompt(' y vas blackjack NA RAZDA4E, POBEDA!');
+		prompt(' У ВАС БЛЕКДЖЕК НА РАЗДАЧЕ, POBEDA!');
 	}
 		else{
 var answer='';
 do{
 	if (getSum(player)==21)
 	{
-		prompt(getStatus()+' y vas blackjack, POBEDA!');
+		prompt(getStatus()+' У ВАС БЛЕКДЖЕК, POBEDA!');
 		break;
 	}
 	else if (getSum(player)>21){
 		
-		prompt(getStatus()+' y vas perebor, PORAJENIE!');
+		prompt(getStatus()+' У ВАС ПЕРЕБОР, PORAJENIE!');
 		break;
 	}
 	else {
-	answer = prompt(getStatus()+' hotite ewe karty? 1- da, else - net');
+	answer = prompt(getStatus()+' ХОТИТЕ ЕЩЕ КАРТУ? "1" - да, "пусто" - нет');
 	if (answer=='1'){
 		player.push(getCard());
 	}
