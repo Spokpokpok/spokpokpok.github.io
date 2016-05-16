@@ -33,19 +33,19 @@ var dealer = [getCard()];
 var player = [getCard(), getCard()];
 if (getSum(player)==21)
 	{
-		prompt(' У ВАС БЛЕКДЖЕК НА РАЗДАЧЕ, POBEDA!');
+		prompt(' У ВАС БЛЕКДЖЕК НА РАЗДАЧЕ, ПОБЕДА!');
 	}
 		else{
 var answer='';
 do{
 	if (getSum(player)==21)
 	{
-		prompt(getStatus()+' У ВАС БЛЕКДЖЕК, POBEDA!');
+		prompt(getStatus()+' У ВАС БЛЕКДЖЕК, ПОБЕДА!');
 		break;
 	}
 	else if (getSum(player)>21){
 		
-		prompt(getStatus()+' У ВАС ПЕРЕБОР, PORAJENIE!');
+		prompt(getStatus()+' У ВАС ПЕРЕБОР, ПОРАЖЕНИЕ!');
 		break;
 	}
 	else {
@@ -61,16 +61,16 @@ do{
 		var sumPlayer = getSum(player);
 
 		if(sumDealer==21){
-			alert('y dillera BJ '+getStatus());
+			alert('у Диллера БЛЕКДЖЕК '+getStatus());
 		} else if (sumDealer>21){
-			alert('i dillera perebor '+getStatus());
+			alert('у Диллера перебор '+getStatus());
 		}else if (sumDealer==sumPlayer) {
-			alert('nich`ja '+getStatus());
+			alert('Ничья '+getStatus());
 		} else if(sumPlayer>sumDealer){
-			alert('viigrash '+getStatus());
+			alert('Выигрыш '+getStatus());
 
 		}else if(sumPlayer<sumDealer){
-			alert('proigrash '+getStatus());
+			alert('Проигрыш '+getStatus());
 		}
 	}
 }
