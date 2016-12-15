@@ -515,7 +515,7 @@ footer a
     font-size: 18px;
 }
 
-@media all and (max-width: 480px) { 
+@media all and (max-width: 479px) { 
     .wrapper p 
     {
        
