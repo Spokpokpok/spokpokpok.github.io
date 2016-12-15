@@ -514,3 +514,21 @@ footer a
     color:#7cc576;
     font-size: 18px;
 }
+
+@media all and (max-width: 480px) { 
+    .wrapper p 
+    {
+       
+        font-size: 12px;
+    }
+.wrapper img 
+    {
+       
+        display:none;
+    }
+    .wrapper
+    {
+        width: 100%;
+        
+    }
+}
