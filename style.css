@@ -65,10 +65,10 @@ a{
 main
 {
    
-    width: 100%;
 background-color: #f9f9f9;
     height: 700px;  
      padding-top: 40px;
+    background-size: 100%;
   
 }
 .wrapper
