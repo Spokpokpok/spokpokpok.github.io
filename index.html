@@ -5,13 +5,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animate%20.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="wow.min.js"></script>
 </head>
 <body>
  <header>
      
       <div class="hedder-background">
       <div class="header-inside">
-          <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+          <h1 class="wow fadeInLeft"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
           <nav>
               <ul>
                   <li><a href="#">главная</a></li>
@@ -39,7 +42,7 @@
             
             
              </div>
-        <img src="img/Logo-2.png" alt="ccleaner">
+        <img src="img/Logo-2.png" alt="ccleaner" class="wow fadeInRight">
         
  
      
@@ -98,8 +101,8 @@
           </div>
           
           
-          <div class="quote2"><p><i class="fa fa-quote-left" aria-hidden="true"></i>Бесплатное, но такое многофункциональное приложение. Пользуюсь более 3-х лет. Компьютер работает как часы.<i class="fa fa-quote-right" aria-hidden="true"></p></i></div>
-          <div class="client client2"><img src="img/client-pic1.jpg" alt="">
+          
+          <div class="client client2"><div class="quote2"><p><i class="fa fa-quote-left" aria-hidden="true"></i>Бесплатное, но такое многофункциональное приложение. Пользуюсь более 3-х лет. Компьютер работает как часы.<i class="fa fa-quote-right" aria-hidden="true"></p></i></div><img src="img/client-pic1.jpg" alt="">
           <h4>МАРИЯ НЕСТЕРОВА</h4>
           
               <span><p>BFA Company</p></span>
@@ -168,5 +171,8 @@
       
   </footer>
   </div>
+  <script>
+new WOW().init();
+</script>
 </body>
 </html>
