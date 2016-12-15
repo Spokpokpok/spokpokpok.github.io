@@ -70,7 +70,7 @@ main
 background-color: #f9f9f9;
     height: 650px;  
     width: 100%;
-   padding: 40px 20px 0 20px;
+   padding: 40px 20px 0px 20px;
    
    
     
@@ -80,7 +80,7 @@ background-color: #f9f9f9;
 .wrapper
 {
     height: 650px;
-    overflow: hidden;
+    
     width: 1135px;
     margin: 0 auto;
     background-color: #f9f9f9;
@@ -515,20 +515,4 @@ footer a
     font-size: 18px;
 }
 
-@media all and (max-width: 479px) { 
-    .wrapper p 
-    {
-       
-        font-size: 12px;
-    }
-.wrapper img 
-    {
-       
-        display:none;
-    }
-    .wrapper
-    {
-        width: 100%;
-        
-    }
-}
+
