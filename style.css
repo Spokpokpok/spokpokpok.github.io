@@ -68,7 +68,7 @@ a{
 
 .main-bg
 {
-height:700px;
+height:750px;
 width:100%;
 background-color:#f9f9f9; 
     display: block;
@@ -78,7 +78,7 @@ background-color:#f9f9f9;
 }
 .wrapper
 {
-    height: 650px;
+    height: 700px;
     
     width: 1135px;
     margin: 0 auto;
@@ -88,7 +88,7 @@ padding-top: 50px;
 .wrapper .img-block 
 {
     width: 650px;
-    height: 350px;
+    height:  350px;
    background: url(img/Logo-2.png) 0 0 no-repeat;
     float: right;
     border-radius: 5px;
