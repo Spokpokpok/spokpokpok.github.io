@@ -7,6 +7,7 @@ html
 {
     overflow-x:hidden;
 }
+
 p
 {
         font-size: 16px;
@@ -84,6 +85,7 @@ background-color:#f9f9f9;
     margin: 0 auto;
     background-color: #f9f9f9;
 padding-top: 50px;   
+    overflow: hidden;
 }
 .wrapper .img-block 
 {
@@ -97,6 +99,7 @@ padding-top: 50px;
 {
     width: 450px;
     float: left;
+    overflow: hidden;
 }
 .wrapper h1
 {
@@ -143,6 +146,7 @@ padding-top: 50px;
     width: 1140px;
     margin: 0 auto;
 height: 550px;
+    
     
 }
 h2
@@ -224,6 +228,7 @@ h2
 {
     width: 1140px;
     height: 260px;
+    overflow: hidden;
    
 }
 .quote
@@ -295,6 +300,7 @@ font-size: 18px;
 .client2
 {
     height: 260px;
+    overflow: hidden;
 }
 .client2 img
 {
